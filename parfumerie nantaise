@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de Parfums</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000; /* Texte en noir */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Hauteur de la page égale à la hauteur de l'écran */
+            background-image: url('images/image21.jpeg.png'); /* Chemin relatif vers l'image */
+            background-size: cover; /* L'image couvre toute la page */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #000; /* Titre en noir */
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Ombre légère pour améliorer la lisibilité */
+        }
+        .container {
+            max-width: 800px;
+            width: 90%; /* Largeur relative pour s'adapter à l'écran */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent clair pour améliorer la lisibilité */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .price-list {
+            margin: 20px 0;
+        }
+        .price-list table {
+            width: 100%;
+            border-collapse: collapse;
+            background: transparent; /* Fond transparent pour le tableau */
+        }
+        .price-list th, .price-list td {
+            border: 1px solid rgba(0, 0, 0, 0.2); /* Bordures semi-transparentes */
+            padding: 12px;
+            text-align: center;
+            color: #000; /* Texte en noir */
+        }
+        .price-list th {
+            background-color: rgba(0, 0, 0, 0.1); /* Fond très léger pour les en-têtes */
+        }
+        .price-list tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.05); /* Lignes alternées très légères */
+        }
+        .price-list tr:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Effet de survol léger */
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.1); /* Fond très léger */
+            color: #000; /* Texte en noir */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: rgba(0, 0, 0, 0.2); /* Fond un peu plus foncé au survol */
+        }
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur notre page de vente de parfums</h1>
+        <p>Découvrez nos parfums exclusifs à des prix imbattables !</p>
+
+        <div class="price-list">
+            <h2>Liste des prix</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parfum</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1- Parfum</td>
+                        <td>10€</td>
+                    </tr>
+                    <tr>
+                        <td>2- Parfum</td>
+                        <td>20€</td>
+                    </tr>
+                    <tr>
+                        <td>3- Parfum</td>
+                        <td>30€</td>
+                    </tr>
+                    <!-- Ajoutez plus de lignes selon vos produits -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="social-links">
+            <a href="https://snapchat.com/t/51MkGLHe" target="_blank">
+                <img src="téléchargement.png" alt="Snapchat Icon"> <!-- Chemin relatif vers l'icône -->
+                Suivez-nous sur Snapchat
+            </a>
+            <a href="https://www.vinted.fr/member/250532429-parfumerienantaise" target="_blank">
+                Visitez notre Vinted
+            </a>
+        </div>
+    </div>
+</body>
+</html>
